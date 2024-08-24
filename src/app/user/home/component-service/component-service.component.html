@@ -1,0 +1,21 @@
+<p>component-service works!</p>
+<div class="bg-color-4 mx-16 my-10 w-auto h-auto flex justify-center flex-col py-8 space-y-5">
+    <h1 class="text-3xl text-center text-color-2 font-semibold uppercase">cuidamos en nuestros servicios</h1>
+    <h1 class="text-4xl text-center text-color-1 font-bold capitalize">Nuestros Servicios</h1>
+    <div class=" mt-10 w-[75%] mx-auto  h-[70svh] grid grid-cols-10">
+        <div class=" col-span-2 ">
+            <div class=" w-full h-[90%] grid grid-rows-4 *:row-span-1 rounded-t-xl border">
+                <div class="space-y-2 flex items-center justify-center flex-col border hover:bg-color-1 rounded-t-xl cursor-pointer group" *ngFor="let element of serviceLists">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 text-color-2 group-hover:text-color-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>                      
+                    <h1 class="text-color-5 text-xl group-hover:text-color-3">{{element.name}}</h1>
+                </div>
+            </div>
+            <button type="button" class="bg-color-1 rounded-b-xl w-full h-[10%] capitalize text-color-3 hover:text-white text-xl"><a routerLink="/service">ver todo</a></button>
+        </div>
+        <div class="col-span-8">
+
+        </div>
+    </div>
+</div>
