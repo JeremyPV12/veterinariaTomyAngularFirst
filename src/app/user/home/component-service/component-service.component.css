@@ -1,0 +1,13 @@
+.elements-style{
+    @apply  bg-white hover:bg-color-1  flex justify-center items-center flex-col h-[6.5rem] space-y-5 border border-color-4
+    cursor-pointer ;
+}
+
+.elements-letter{
+    @apply font-inter text-color-5 font-normal text-[1rem] group-hover:text-color-3 capitalize;
+}
+
+.button-style{
+    @apply bg-color-1 font-inter font-normal text-[1rem] text-color-3 capitalize text-center w-full h-10 rounded-b-xl
+    hover:text-color-4 cursor-pointer  ;
+}

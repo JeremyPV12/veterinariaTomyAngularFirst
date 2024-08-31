@@ -3,6 +3,10 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
+  safelist: [
+    'fa', 'fa-solid', 'fa-duotone', 'fa-light', 'fa-regular', 'fa-thin', 'fa-brands', 'fa-lg', 'fa-xs', 'fa-sm',
+    // Añade aquí más clases de Font Awesome que uses con frecuencia.
+  ],
   theme: {
     extend: {
       colors:{
@@ -16,10 +20,17 @@ module.exports = {
         'color-8':'#f7f8fd',
         'color-9': '#25D366',
       },
+      padding:{
+        'global':'13.7%'
+      },
+      margin:{
+        'global':'13.7%'
+      }
     },
     fontFamily:{
-      'Inter':'"Inter", sans-serif"'
-    }
+      inter : ['Inter','sans-serif'],
+      cormorant_Garamond : ['Cormorant Garamond','sans-serif'],
+    },
   },
   plugins: [],
 }

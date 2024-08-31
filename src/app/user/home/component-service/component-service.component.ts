@@ -13,4 +13,12 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class ComponentServiceComponent {
   serviceLists = serviceList
+  
+  hola : string = ""
+
+  prueba(){
+    console.log(this.serviceLists)
+  }
+
+
 }
