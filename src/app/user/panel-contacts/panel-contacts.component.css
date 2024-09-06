@@ -13,3 +13,15 @@
 .p-element{
     @apply font-inter font-normal text-[1.1rem] text-color-1 group-hover:text-color-3;
 }
+
+.hideen-content{
+    @apply  grid grid-rows-2 space-y-3 ; 
+}
+
+.hideen-day{
+    @apply font-inter text-[1.2rem] text-color-3  border-b-4 border-color-3 w-max;
+}
+
+.hideen-p{
+    @apply font-inter text-[1rem] text-white ;
+}

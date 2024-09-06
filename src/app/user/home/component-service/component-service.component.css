@@ -11,3 +11,19 @@
     @apply bg-color-1 font-inter font-normal text-[1rem] text-color-3 capitalize text-center w-full h-10 rounded-b-xl
     hover:text-color-4 cursor-pointer  ;
 }
+
+.button-register{
+    @apply font-inter font-normal text-[1rem] bg-color-1 w-max h-auto rounded-xl text-color-3 hover:text-color-4 px-3 py-2 absolute 
+    transform left-1/2 -translate-x-1/2 bottom-0 ; 
+}
+
+.style-div-father{
+    @apply bg-color-1 w-full col-span-2  flex justify-between p-2  pl-3 ;
+}
+
+.style-label{
+    @apply font-inter font-medium text-white text-[1.1rem]  w-1/2 h-full border-r-2 border-color-3 ;
+}
+.style-select{
+    @apply px-2 w-1/2 bg-color-1  focus:outline-none focus:text-color-3  h-full font-inter font-medium text-white text-[1.1rem] ;
+}
