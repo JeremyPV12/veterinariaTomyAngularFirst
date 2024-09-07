@@ -9,6 +9,7 @@ export const listProduct : Product[] = [
     {id:8, name:'Araña', price: 18 , marca:'llabe' },
     {id:9, name:'Puercoespin', price: 18 , marca:'correa' },
     {id:10, name:'Aladin', price: 18 , marca:'luis' },
+    {id:11, name:'Alibaba', price: 16 , marca:'pedro' },
 ]
 
 export interface Product{

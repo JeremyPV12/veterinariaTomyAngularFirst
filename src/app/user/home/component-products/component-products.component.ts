@@ -13,10 +13,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class ComponentProductsComponent {
 
-  /* elements = listProduct; */
-  elements : Product[] = [];
+  elements = listProduct
 
-  indexProducts : number = 0;
+  indexProducts : number = 0; 
 
   elementNotHidden : Product [] = [];
 
@@ -25,14 +24,14 @@ export class ComponentProductsComponent {
   }
 
   changeElements(){
-    const start = this.indexProducts;
-    const end = (start + 5) % this.elements.length;
+    const start = this.indexProducts; /* 0 */
+    const end = (start + 5) % this.elements.length; /* 5 % 10 = 5 ///  10 % 10 = 0 */
 
-    if(end > start){
-      this.elementNotHidden.slice(start,end)
+    if(end > start){ /* 5>0     // 0 >5*/
+      this.elementNotHidden = this.elements.slice(start,end)
     } else {
       this.elementNotHidden = [
-        ...this.elements.slice(start,this.elements.length),
+        ...this.elements.slice(start,this.elements.length),  /* su usa el ... para combinar arrays */
         ...this.elements.slice(0, end)
       ]
     }

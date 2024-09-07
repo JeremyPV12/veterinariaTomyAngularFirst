@@ -48,8 +48,32 @@
     </nav>
 </menu> -->
 
-<menu class="sticky top-0 z-50 *:px-global">
-    <div class="flex justify-between items-center h-20 bg-white">
+<menu class="sticky top-0 z-50 *:px-5 sm:*:px-global md:*:px-global lg:*:px-global  xl:*:px-global">
+    <div class="grid grid-cols-2 sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden bg-white h-auto w-auto *:space-x-3 py-5">
+        <div class="flex items-center">
+            <i class="fa-duotone fa-solid fa-phone-volume fa-xl" style="color: #1f2b6c;"></i>
+            <div class="">
+                <h3 class="contacts-style-1">Telefono</h3>
+                <h4 class="contacts-style-2">987456132</h4>
+            </div>
+        </div>
+        <div class=" flex items-center justify-end ">
+            <i class="fa-solid fa-location-dot fa-2xl" style="color: #1f2b6c;"></i>
+            <div class="">
+                <h3 class="contacts-style-1">Ubicación</h3>
+                <h4 class="contacts-style-2">Jr. Calixto #123</h4>
+            </div>
+        </div>
+        <div class="col-span-2 flex items-center justify-center">
+            <i class="fa-regular fa-clock fa-2xl" style="color: #1f2b6c;"></i>
+            <div class="">
+                <h3 class="contacts-style-1">Horario</h3>
+                <h4 class="contacts-style-2">10:00 a.m - 08:00 p.m</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden sm:flex md:flex lg:flex  xl:flex justify-between items-center h-20 bg-white">
         <div class="flex space-x-4 items-center">
             <img src="./image/logo-company.jpg" alt="" class="rounded-full w-16 h-16">
             <h1 class="font-cormorant_Garamond font-bold text-[36px] text-color-1 uppercase">Veterinaria <span class="text-color-2">Tomy</span></h1>
@@ -78,13 +102,20 @@
             </div>
         </div>
     </div>
+    
     <div class=" bg-color-1 h-14 flex items-center">
-        <ul class="flex space-x-10">
+        <ul class=" space-x-10 hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex">
             <li class="items-style-sidebar" routerLink="">inicio</li>
             <li class="items-style-sidebar" routerLink="/service">servicio</li>
             <li class="items-style-sidebar" routerLink="/products">tienda</li>
             <li class="items-style-sidebar" routerLink="/">reseñas</li>
             <li class="items-style-sidebar" routerLink="/">mi cuenta</li>
+        </ul>
+        <ul class="flex justify-between items-center w-full sm:flex lg:hidden xl:hidden 2xl:hidden">
+            <li class="font-cormorant_Garamond text-color-3 font-bold text-[1.5rem] uppercase">Veterinaria <span class="text-white">Tomy</span></li>
+            <li class="cursor-pointer">
+                <i class="fa-solid fa-bars fa-2xl text-white hover:text-color-3"></i>
+            </li>
         </ul>
     </div>
 </menu>
